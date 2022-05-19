@@ -2,6 +2,7 @@
 Linux系统编程模板程序
 
 ## 1. 文件目录
+```txt
 -- socket_template: socket相关demo
 |____ internet_socket: 网络套接字
       |____ internet_sokcet_client: 网络套接字客户端
@@ -18,6 +19,7 @@ Linux系统编程模板程序
       |____ posix_shm_write:  往共享内存段中写数据
       |____ posix_shm_read:   读取共享内存段中的数据
       |____ posix_shm_unlink: 删除一个posix共享内存段
+```
 ## 2. 更新记录
 ```txt
 2022-05-19, sleep-at-11 v1.0.0
