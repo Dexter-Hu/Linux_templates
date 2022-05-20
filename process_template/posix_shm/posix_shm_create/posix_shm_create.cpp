@@ -36,10 +36,10 @@ int main()
     char name[] = "/demo_shm";
     int flag    = O_RDWR | O_CREAT ;
     mode_t mode = 0766;
-    size_t size = 10;
+    size_t size = 100;
     int ret = posix_shm_create(name, flag, mode, size); //创建一个posix共享内存
     if (-1 == ret) {
-        printf("[%s-%d] %s-%s: E-posix_shm_create() err\n", __FILE__, __LINE__, __DATE__, __TIME__);
+        printf("[%s-%d] %s-%s: E-posix_shm_write() err\n", __FILE__, __LINE__, __DATE__, __TIME__);
     }
     return 0;
 }
