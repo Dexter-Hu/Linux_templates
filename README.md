@@ -7,15 +7,24 @@ Linux系统编程模板程序
 |____ current_time: 获取当前时间,以指定格式打印
 |____ wait_status:  解析子进程返回状态码
 
+
+-- io_template:   io相关操作
+|____ epoll:      epoll示例
+
 -- socket_template: socket相关demo
 |____ internet_socket: 网络套接字
       |____ internet_sokcet_client: 网络套接字客户端
       |____ internet_socket_server: 网络套接字服务器
 |____ readline:        读取一行
 
--- thread_template:  线程相关demo
-|____ mutex:         线程互斥量
-|____ simple_thread: 简单线程
+-- system_template:   系统操作相关demo
+|____ rlimit:         系统限制设置
+
+-- thread_template:   线程相关demo
+|____ mutex:          线程互斥量
+|____ simple_thread:  简单线程
+|____ condition:      条件变量
+|____ pthread_cancel: 线程取消
 
 -- process_template: 进程相关demo
 |____ process:       进程基础
@@ -33,6 +42,9 @@ Linux系统编程模板程序
       |____ posix_shm_write:  往共享内存段中写数据
       |____ posix_shm_read:   读取共享内存段中的数据
       |____ posix_shm_unlink: 删除一个posix共享内存段
+
+-- timer_template:   定时器相关demo
+|____ timerfd:       定时器操作
 ```
 ## 2. 更新记录
 ```txt
@@ -61,6 +73,12 @@ Linux系统编程模板程序
 + 新建process_comm_template,保存进程间通信例程;
 + 新建pipe文件夹,pipe管道的简单使用;
 + 新建pipe_sync文件夹,pipe管道用于同步进程.
+
+2022-11-15, sleep-at-11 v1.0.0
++ 增加io_template文件夹,里面是io相关操作demo;
++ 增加system_template文件夹,里面是包含系统相关操作的demo;
++ 线程demo中增加条件变量和线程取消两个demo;
++ 增加timer_template文件夹,里面包含定时器相关操作.
 ```
 
 
